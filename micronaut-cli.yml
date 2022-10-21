@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.madrasaty
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: maven
+features: [annotation-api, app-name, hibernate-reactive-jpa, http-client, jackson-databind, junit, kotlin, kotlin-application, logback, maven, netty-server, postgres, reactor, reactor-http-client, readme, security-annotations, security-jwt, shade, test-resources, yaml]
