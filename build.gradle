@@ -43,7 +43,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.hibernate.reactive.testcontainers.ApplicationKt")
+    mainClass.set("com.madrasaty.ApplicationKt")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
