@@ -1,10 +1,10 @@
-package com.hibernate.reactive.testcontainers
+package com.madrasaty
 
-import com.hibernate.reactive.testcontainers.user.data.entity.Parent
-import com.hibernate.reactive.testcontainers.user.data.entity.Student
-import com.hibernate.reactive.testcontainers.user.data.repo.LoginRepo
-import com.hibernate.reactive.testcontainers.user.data.repo.ParentRepo
-import com.hibernate.reactive.testcontainers.user.data.repo.SchoolRepo
+import com.madrasaty.user.data.entity.Parent
+import com.madrasaty.user.data.entity.Student
+import com.madrasaty.user.data.repo.LoginRepo
+import com.madrasaty.user.data.repo.ParentRepo
+import com.madrasaty.user.data.repo.SchoolRepo
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import jakarta.inject.Inject
 import java.text.SimpleDateFormat

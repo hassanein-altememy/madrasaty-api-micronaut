@@ -1,4 +1,4 @@
-package com.hibernate.reactive.testcontainers.user.data.entity
+package com.madrasaty.user.data.entity
 
 import javax.persistence.Entity
 import javax.persistence.OneToMany

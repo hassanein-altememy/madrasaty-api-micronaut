@@ -1,6 +1,6 @@
-package com.hibernate.reactive.testcontainers.user.data.repo
+package com.madrasaty.user.data.repo
 
-import com.hibernate.reactive.testcontainers.user.data.entity.Parent
+import com.madrasaty.user.data.entity.Parent
 import io.micronaut.data.repository.kotlin.CoroutineCrudRepository
 import java.util.*
 
