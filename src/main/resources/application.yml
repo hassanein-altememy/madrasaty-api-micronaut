@@ -1,26 +1,29 @@
 micronaut:
   application:
     name: madrasatyApi
-  security:
-    authentication: bearer
-    token:
-      jwt:
-        signatures:
-          secret:
-            generator:
-              secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
-netty:
-  default:
-    allocator:
-      max-order: 3
+
+#datasources:
+#  default:
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    driverClassName: org.postgresql.Driver
+#    username: postgres
+#    password: 'sa'
+#    schema-generate: CREATE_DROP
+#    dialect: POSTGRES
+
 jpa:
   default:
+    reactive: true
     properties:
       hibernate:
         hbm2ddl:
           auto: update
         connection:
-          url: jdbc:postgresql://localhost:5432/postgres
-          username: postgres
-          password: ''
-    reactive: true
+          url: jdbc:postgresql://localhost:5432/madrasaty
+          username: madrasaty
+          password: 1234
+          dialect: POSTGRES
+netty:
+  default:
+    allocator:
+      max-order: 3

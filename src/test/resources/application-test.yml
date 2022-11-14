@@ -1,0 +1,21 @@
+#jpa:
+#  default:
+#    properties:
+#      hibernate:
+#        connection:
+#          url: jdbc:tc:postgresql:12:///postgres
+#          dialect: POSTGRES
+#          driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+#datasources:
+#  default:
+#    url: jdbc:tc:postgresql:12:///postgres
+#    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+#test-resources:
+#  containers: postgres
+
+datasources:
+  default:
+    schema-generate: CREATE
+    db-type: postgres
