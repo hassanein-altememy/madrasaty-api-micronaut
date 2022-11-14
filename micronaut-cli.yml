@@ -1,6 +1,6 @@
 applicationType: default
-defaultPackage: com.madrasaty
+defaultPackage: com.hibernate.reactive.testcontainers
 testFramework: junit
 sourceLanguage: kotlin
-buildTool: maven
-features: [annotation-api, app-name, hibernate-reactive-jpa, http-client, jackson-databind, junit, kotlin, kotlin-application, logback, maven, netty-server, postgres, reactor, reactor-http-client, readme, security-annotations, security-jwt, shade, test-resources, yaml]
+buildTool: gradle
+features: [annotation-api, app-name, data, data-hibernate-reactive, gradle, http-client, jackson-databind, junit, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, micronaut-test-rest-assured, netty-server, postgres, readme, shade, test-resources, testcontainers, yaml]
