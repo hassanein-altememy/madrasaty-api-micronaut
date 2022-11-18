@@ -1,4 +1,4 @@
-package com.hibernate.reactive.testcontainers
+package com.madrasaty
 
 import com.madrasaty.user.data.entity.Parent
 import com.madrasaty.user.data.entity.Student
@@ -10,17 +10,17 @@ import jakarta.inject.Inject
 import java.text.SimpleDateFormat
 import org.junit.Test
 
-//@MicronautTest
+@MicronautTest
 class MadrasatyTest {
 
-//    @Inject
-//    lateinit var loginRepo : LoginRepo;
-//
-////    @Inject
-//    lateinit var parentRepo : ParentRepo;
-//
-////    @Inject
-//    lateinit var schoolRepo : SchoolRepo;
+    @Inject
+    lateinit var loginRepo : LoginRepo;
+
+    @Inject
+    lateinit var parentRepo : ParentRepo;
+
+    @Inject
+    lateinit var schoolRepo : SchoolRepo;
 
     @Test
     fun `Test inserting and selecting some data`() {
@@ -36,7 +36,7 @@ class MadrasatyTest {
         meryem.birthday = SimpleDateFormat("MM-dd-yyyy").parse("27-07-2021")
         hassanein.children = listOf(meryem)
 
-//        println(parentRepo.save(hassanein))
+        println(parentRepo.save(hassanein))
 
         assert(true)
 

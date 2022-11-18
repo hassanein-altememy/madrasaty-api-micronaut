@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: com.hibernate.reactive.testcontainers
+defaultPackage: com.madrasaty
 testFramework: junit
 sourceLanguage: kotlin
 buildTool: gradle

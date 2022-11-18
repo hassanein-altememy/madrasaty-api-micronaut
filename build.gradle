@@ -28,22 +28,23 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
+    implementation("io.micronaut:micronaut-validation")
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("io.micronaut.test:micronaut-test-rest-assured")
     testImplementation("org.testcontainers:junit-jupiter")
-    testImplementation("org.testcontainers:postgresql")
-    testImplementation("org.testcontainers:testcontainers")
-    testResourcesService("org.postgresql:postgresql")
-    implementation("io.micronaut:micronaut-validation")
+//    testImplementation("org.testcontainers:postgresql")
+//    testImplementation("org.testcontainers:testcontainers")
+//    testResourcesService("org.postgresql:postgresql")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
-    runtimeOnly("org.postgresql:postgresql")
+//    runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly("io.netty:netty-all")
 
 }
 
 
 application {
-    mainClass.set("com.hibernate.reactive.testcontainers.ApplicationKt")
+    mainClass.set("com.madrasaty.ApplicationKt")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
