@@ -6,5 +6,5 @@ import javax.persistence.OneToMany
 @Entity
 class Parent : Person() {
     @OneToMany
-    var children: List<Student>? = null
+    val children: MutableList<Student> = mutableListOf()
 }

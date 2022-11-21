@@ -8,7 +8,7 @@ import com.madrasaty.user.data.repo.SchoolRepo
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import jakarta.inject.Inject
 import java.text.SimpleDateFormat
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 @MicronautTest
 class MadrasatyTest {
@@ -34,7 +34,10 @@ class MadrasatyTest {
         meryem.lastName = "Altememy"
         meryem.address = "Menno ter Braakstraat 60, Den haag"
         meryem.birthday = SimpleDateFormat("MM-dd-yyyy").parse("27-07-2021")
-        hassanein.children = listOf(meryem)
+        hassanein.children.add(meryem)
+        meryem.parents.add(hassanein)
+
+        val parent = parentRepo.save(hassanein)
 
         println(parentRepo.save(hassanein))
 

@@ -21,6 +21,6 @@ abstract class Person {
     var address: String?=null
 
     @OneToMany
-    var logins: List<Login>?=null
+    val logins: MutableList<Login> = mutableListOf()
 
 }
