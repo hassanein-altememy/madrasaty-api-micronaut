@@ -1,5 +1,6 @@
 package com.madrasaty.user.data.entity
 
+import javax.persistence.CascadeType
 import javax.persistence.Entity
 import javax.persistence.Id
 import javax.persistence.OneToMany
@@ -8,8 +9,8 @@ import javax.persistence.OneToMany
 class SchoolClass {
     @Id
     val name: String?=null
-    @OneToMany
+    @OneToMany(cascade = [CascadeType.ALL])
     val students: MutableList<Student> = mutableListOf()
-    @OneToMany
+    @OneToMany(cascade = [CascadeType.ALL])
     var teachers: MutableList<Teacher> = mutableListOf()
 }

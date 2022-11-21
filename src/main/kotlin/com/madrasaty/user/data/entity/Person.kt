@@ -1,6 +1,7 @@
 package com.madrasaty.user.data.entity
 
 import java.util.*
+import javax.persistence.CascadeType
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
 import javax.persistence.MappedSuperclass
@@ -20,7 +21,7 @@ abstract class Person {
 
     var address: String?=null
 
-    @OneToMany
+    @OneToMany(cascade = [CascadeType.ALL])
     val logins: MutableList<Login> = mutableListOf()
 
 }
