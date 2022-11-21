@@ -5,11 +5,11 @@ import javax.persistence.Id
 import javax.persistence.OneToMany
 
 @Entity
-class SchoolClass (
+class SchoolClass {
     @Id
-    val name: String?=null,
+    val name: String?=null
     @OneToMany
-    var students: List<Student>?=null,
+    val students: MutableList<Student> = mutableListOf()
     @OneToMany
-    var teachers: List<Teacher>?=null
-)
+    var teachers: MutableList<Teacher> = mutableListOf()
+}
